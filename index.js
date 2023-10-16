@@ -1,5 +1,21 @@
 const btnEl = document.getElementById("btn")
  const jokeEl =document.getElementById("joke")
+ // Get the like button element
+const likeBtn = document.getElementById('likeBtn');
+
+
+// Initialize the like count
+let likeCount = 0;
+
+// Function to handle the like button click
+likeBtn.addEventListener('click', function () {
+    // Increment the like count
+    likeCount++;
+    
+    // Update the like button text to show the number of likes
+    likeBtn.textContent = `Like (${likeCount})`;
+});
+
 
 const apikey = "zLjzJgOl6YDECLvq6+PNlQ==E5JA2L8ErKCHjT75";
 
